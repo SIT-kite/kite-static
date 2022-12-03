@@ -1,2 +1,2 @@
-android|1.4.3
+android|1.5.2
 ios|1.4.3+30
