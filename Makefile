@@ -1,18 +1,18 @@
 include common.mk
 
-buildAbout:
+buildAbout: about/index.md
 	cd about && ${PYTHON} build.py
 
 updateAbout: buildAbout
 	cd about/index.html ${KITE_STATIC}/about/index.html
 
-buildBulletin:
+buildBulletin: bulletin/index.yaml
 	cd bulletin && ${PYTHON} build.py
 
 updateBulletin: buildBulletin
 	cp bulletin.json ${KITE_STATIC}/bulletin/bulletin.json
 
-buildOverride:
+buildOverride: override/override.yaml
 	cd override && ${PYTHON} build.py
 
 updateOverride: buildOverride
