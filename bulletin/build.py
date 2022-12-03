@@ -1,6 +1,6 @@
 import yaml
 import json
-from typing import *
+from typing import Optional, List, Dict, Any
 
 bulletin_index: Optional[List[Dict[str, Any]]] = None
 
@@ -19,6 +19,9 @@ for post in bulletin_index:
     if 'file' not in post.keys():
         post['file'] = f'src/{title}.md'
     
+    if 'top' not in post.keys():
+        post['top'] = False
+
     try:
         with open(post['file'], mode='r', encoding='utf-8') as f:
             post['content'] = f.read()
