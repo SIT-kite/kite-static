@@ -9,3 +9,7 @@ index.html: index.md
 .PHONY : clean
 clean:
 	rm index.html
+
+.PHONY : install
+install: all
+	cd index.html ${KITE_STATIC}/about/index.html

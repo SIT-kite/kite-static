@@ -9,3 +9,7 @@ override.json : override.yaml
 .PHONY : clean
 clean:
 	rm override.json
+
+.PHONY : install
+install: all
+	cd override.json ${KITE_STATIC}/override.json

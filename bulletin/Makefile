@@ -9,3 +9,7 @@ output.json: index.yaml
 .PHONY : clean
 clean:
 	rm output.json
+
+.PHONY : install
+install: all
+	cd output.json ${KITE_STATIC}/bulletin.json
