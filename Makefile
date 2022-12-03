@@ -2,7 +2,7 @@ include common.mk
 
 buildAbout:
 	cd about 
-	python build.py
+	${PYTHON} build.py
 	cd ..
 
 updateAbout: buildAbout
@@ -10,7 +10,7 @@ updateAbout: buildAbout
 
 buildBulletin:
 	cd bulletin
-	python build.py
+	${PYTHON} build.py
 	cd ..
 
 updateBulletin: buildBulletin
@@ -18,7 +18,7 @@ updateBulletin: buildBulletin
 
 buildOverride:
 	cd override
-	python build.py
+	${PYTHON} build.py
 	cd ..
 
 updateOverride: buildOverride
@@ -31,4 +31,4 @@ updateVersion:
 	cp version/version.txt ${KITE_STATIC}/version.txt
 
 
-release: updateAbout updateBulletin updateOverride updateUpgradePage updateVersion
+all: updateAbout updateBulletin updateOverride updateUpgradePage updateVersion
