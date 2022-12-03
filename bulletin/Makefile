@@ -12,4 +12,4 @@ clean:
 
 .PHONY : install
 install: all
-	cd output.json ${KITE_STATIC}/bulletin.json
+	cp output.json ${KITE_STATIC}/bulletin.json
