@@ -8,4 +8,4 @@ index.html: index.md
 
 .PHONY : clean
 clean:
-	rm index.md
+	rm index.html

@@ -8,4 +8,4 @@ override.json : override.yaml
 
 .PHONY : clean
 clean:
-	rm output.json
+	rm override.json
