@@ -1,7 +1,21 @@
 include common.mk
 
-buildAbout: about/index.md
-	cd about && ${PYTHON} build.py
+SECTIONS = \
+	about \
+	bulletin \
+	override \
+
+.DEFAULT_GOAL := all
+
+all: 
+	@echo "Build all ......................."
+	for dir in $(SECTIONS); do $(MAKE) -C $$dir || exit "$$?"; done
+	@echo "Build all finished successfully! ......"
+
+
+.PHONY : clean
+clean:
+	for dir in $(SECTIONS); do $(MAKE) -C $$dir clean || exit "$$?"; done
 
 updateAbout: buildAbout
 	cd about/index.html ${KITE_STATIC}/about/index.html
