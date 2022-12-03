@@ -12,4 +12,4 @@ clean:
 
 .PHONY : install
 install: all
-	cd index.html ${KITE_STATIC}/about/index.html
+	cd index.html ${KITE_STATIC}/about.html
