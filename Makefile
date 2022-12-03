@@ -24,5 +24,7 @@ updateUpgradePage:
 updateVersion:
 	cp version/version.txt ${KITE_STATIC}/version.txt
 
+installRequirements:
+	pip install -r requirements.txt
 
 all: updateAbout updateBulletin updateOverride updateUpgradePage updateVersion
