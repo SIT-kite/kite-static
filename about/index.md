@@ -27,22 +27,24 @@
 
 <div class="table-container">
 		<table class="contributors">
-			<tr><td>2017级</td>              <td>外国语学院</td><td>张城</td></tr>
-			<tr><td>2017级</td>                  <td>理学院</td><td>Snowstar Cyan</td></tr>
-			<tr><td>2017级</td><td>计算机科学与信息工程学院</td><td>peanut996</td></tr>
-			<tr><td>2018级</td>      <td>材料科学与工程学院</td><td>RainSlide</td></tr>
-			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td>AlenYing</td></tr>
-			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td><a href="https://sunnysab.cn/">sunnysab</a></td></tr>
-			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td>wanfengcxz</td></tr>
-			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>B635</td></tr>
-			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>wzh</td></tr>
-			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>EvilorLive</td></tr>
-			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td><a href="https://zhangzqs.cn/">zzq</a></td></tr>
-			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td><a href="https://gallifrey.asia/">Gallifrey</a></td></tr>
-			<tr><td>2019级</td>          <td>机械工程学院</td><td>zdy180108</td></tr>
-			<tr><td>2020级</td><td>计算机科学与信息工程学院</td><td>Pony-Zhang</td></tr>
+			<tr><td>2022级</td><td>计算机科学与信息工程学院</td><td>Liplum</td></tr>
+			<tr><td>2020级</td><td>机械工程学院</td><td>记者团廾匸</td></tr>
 			<tr><td>2020级</td><td>计算机科学与信息工程学院</td><td>Devin</td></tr>
-			<tr><td>2020级</td>          <td>机械工程学院</td><td>记者团廾匸</td></tr>
+			<tr><td>2020级</td><td>计算机科学与信息工程学院</td><td>Pony-Zhang</td></tr>
+			<tr><td>2019级</td><td>机械工程学院</td><td>zdy180108</td></tr>
+			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td><a href="https://gallifrey.asia/">Gallifrey</a></td></tr>
+			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td><a href="https://zhangzqs.cn/">zzq</a></td></tr>
+			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>EvilorLive</td></tr>
+			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>wzh</td></tr>
+			<tr><td>2019级</td><td></td><td>Dreamy__S</td></tr>
+			<tr><td>2019级</td><td>计算机科学与信息工程学院</td><td>B635</td></tr>
+			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td>wanfengcxz</td></tr>
+			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td><a href="https://sunnysab.cn/">sunnysab</a></td></tr>
+			<tr><td>2018级</td><td>计算机科学与信息工程学院</td><td>AlenYing</td></tr>
+			<tr><td>2018级</td><td>材料科学与工程学院</td><td>RainSlide</td></tr>
+			<tr><td>2017级</td><td>计算机科学与信息工程学院</td><td>peanut996</td></tr>
+			<tr><td>2017级</td><td>理学院</td><td>Snowstar Cyan</td></tr>
+			<tr><td>2017级</td><td>外国语学院</td><td>张城</td></tr>
 		</table>
 </div>
 
