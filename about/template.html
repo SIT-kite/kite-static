@@ -1,109 +1,71 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>关于 - 上应小风筝</title>
+    <title>关于 - 上应小风筝</title>
 
-<meta name="author"      content="上应小风筝开发者">
-<meta name="description" content="关于上应小风筝">
+    <meta name="author" content="上应小风筝开发者">
+    <meta name="description" content="关于上应小风筝">
 
-<style>
-:root { line-height: 1.618; }
-body { margin: 1em; box-sizing: border-box; }
+    <style>
+        :root {
+            line-height: 1.618;
+        }
 
-h1, h2 { margin: 1rem 0; text-align: center; }
-.subtitle { font-size: 1rem; font-weight: 500; font-style: oblique; }
+        body {
+            margin: 1em;
+            box-sizing: border-box;
+        }
 
-p { margin: .5em 0; text-align: justify; text-indent: 2em; }
-.center { text-align: center; text-indent: 0; font-weight: 500; }
-ul > li p { text-indent: 0; }
+        h1,
+        h2 {
+            margin: 1rem 0;
+            text-align: center;
+        }
 
-blockquote { margin: 0; padding: 0; }
-table { border-collapse: collapse; }
-ul { padding-left: 1em; }
-wbr { user-select: none; }
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            font-style: oblique;
+        }
 
-.quote {
-	padding-left: .75rem;
-	border-left: .25rem solid #BDBDBD;
-	color: #616161;
-	font-size: .9em;
-}
+        p {
+            margin: .5em 0;
+            text-align: justify;
+            text-indent: 2em;
+        }
 
-.quote > ul { padding: 0; }
-.quote > ul > li { list-style: none; }
-
-.table-container { margin: 0 -.5em; overflow: auto; }
-
-.contributors { margin: 0 auto; white-space: nowrap; }
-.contributors td { padding: 0; }
-.contributors td:nth-child(1) { text-align: right; }
-.contributors td:nth-child(2) { text-align: right; padding: 0 .5ch; }
-
-
-.repo-links p {
-	margin: .5em 0 .25em;
-	padding-bottom: .25em;
-	border-bottom: 1px dashed #9E9E9E;
-	font-weight: 500;
-}
-.repo-links li { line-height: 1.5; font-family: Consolas, monospace; }
-
-/* 参与贡献 🌈 */
-@keyframes rainbow {
-	0% { color: red; }
-	14% { color: darkorange; }
-	28% { color: gold; text-shadow: 0 0 1rpx rgba(0, 0, 0, .1); }
-	42% { color: green; }
-	56% { color: teal; }
-	70% {color: blue; }
-	84% {color: purple; }
-	100% { color: red; }
-}
-
-.welcome { animation: rainbow 7s ease infinite; }
-
-/* 自适应 */
-@media (max-width: 359px) {
-	.quote { font-size: .85em; }
-	.contributors { font-size: .8em; letter-spacing: -.05em; }
-	.contributors { padding-inline-start: 0; }
-	.contributors > .li { list-style-type: none; }
-	.repo-links li { font-size: .9em; }
-}
-
-@media (min-width: 360px) and (max-width: 399px) {
-	.quote { font-size: .95em; }
-	.contributors { font-size: .85em; letter-spacing: -.05em; }
-}
-
-@media (min-width: 400px) and (max-width: 439px) {
-	.contributors { font-size: .95em; }
-}
-
-/* @media (min-width: 440px) and (max-width: 479px) {
-
-} */
-
-@media (min-width: 480px) {
-	body {
-		max-width: 32rem;
-		margin: 1rem auto;
-		padding: 0 1rem;
-	}
-}
-
-html[theme='dark-mode'] {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-</style>
+        .center {
+            text-align: center;
+            text-indent: 0;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
     {{ content }}
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
+    <script>
+        function getQueryString(name) {
+            let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            let r = window.location.search.substr(1).match(reg)
+
+            let context = ""
+
+            if (r != null) context = r[2]
+            reg = null;
+            r = null;
+
+            return context == null || context == '' || context == 'undefined' ? "" : context
+        }
+        if (getQueryString('dark') == 'true') {
+            new Darkmode().toggle();
+        }
+    </script>
 </body>
 
 </html>
