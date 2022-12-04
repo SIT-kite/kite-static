@@ -3,7 +3,7 @@ include ../common.mk
 .DEFAULT_GOAL := all
 all: output.json
 
-output.json: index.yaml
+output.json: index.yaml src
 	${PYTHON} build.py
 
 .PHONY : clean
