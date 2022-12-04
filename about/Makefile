@@ -12,4 +12,4 @@ clean:
 
 .PHONY : install
 install: all
-	cp index.html ${KITE_STATIC}/about.html
+	cp index.html ${KITE_ABOUT_HTML}

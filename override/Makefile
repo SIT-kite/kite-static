@@ -12,4 +12,4 @@ clean:
 
 .PHONY : install
 install: all
-	cp override.json ${KITE_STATIC}/override.json
+	cp override.json ${KITE_OVERRIDE_JSON}
