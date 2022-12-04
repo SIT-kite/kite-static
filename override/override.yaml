@@ -30,7 +30,7 @@ extraHomeItem: []
 
 homeItemHide: []
 
-routeNotice: []
+routeNotice: {}
   # /egg:
   #   id: 1
   #   title: Egg维护中
