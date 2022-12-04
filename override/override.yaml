@@ -1,42 +1,42 @@
-routeOverride:
-  - inputRoute: /expense
-    outputRoute: /simple_html
-    args:
-      htmlContent: 学校校园卡消费查询服务器维护中
-      title: 一个123浏览器
+routeOverride: []
+  # - inputRoute: /expense
+  #   outputRoute: /simple_html
+  #   args:
+  #     htmlContent: 学校校园卡消费查询服务器维护中
+  #     title: 一个123浏览器
 
-  - inputRoute: /baidu
-    outputRoute: /browser
-    args:
-      initialUrl: http://kite.sunnysab.cn
-      fixedTitle: 小风筝首页
+  # - inputRoute: /baidu
+  #   outputRoute: /browser
+  #   args:
+  #     initialUrl: http://kite.sunnysab.cn
+  #     fixedTitle: 小风筝首页
 
-  - inputRoute: /bilibili
-    outputRoute: /browser
-    args:
-      initialUrl: http://bilibili.com
-      fixedTitle: bilibili首页
+  # - inputRoute: /bilibili
+  #   outputRoute: /browser
+  #   args:
+  #     initialUrl: http://bilibili.com
+  #     fixedTitle: bilibili首页
 
-extraHomeItem:
-  - title: 小风筝首页
-    route: /baidu
-    description: 打开一个小风筝首页
-    iconUrl: https://kite.sunnysab.cn/page/assets/assets/home/icon_exam.svg
+extraHomeItem: []
+  # - title: 小风筝首页
+  #   route: /baidu
+  #   description: 打开一个小风筝首页
+  #   iconUrl: https://kite.sunnysab.cn/page/assets/assets/home/icon_exam.svg
 
-  - title: bilibili
-    route: /bilibili
-    description: 打开一个bilibili
-    iconUrl: https://img.moegirl.org.cn/common/f/f5/Bilibili_Icon.svg
+  # - title: bilibili
+  #   route: /bilibili
+  #   description: 打开一个bilibili
+  #   iconUrl: https://img.moegirl.org.cn/common/f/f5/Bilibili_Icon.svg
 
 homeItemHide: []
 
-routeNotice:
-  /egg:
-    id: 1
-    title: Egg维护中
-    msg: Egg维护中，可能无法正常使用
+routeNotice: []
+  # /egg:
+  #   id: 1
+  #   title: Egg维护中
+  #   msg: Egg维护中，可能无法正常使用
     
-  /notice:
-    id: 3
-    title: 公告维护中
-    msg: 公告维护中，可能无法正常使用
+  # /notice:
+  #   id: 3
+  #   title: 公告维护中
+  #   msg: 公告维护中，可能无法正常使用
