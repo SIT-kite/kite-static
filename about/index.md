@@ -52,10 +52,10 @@
 
 ### 主站
 
-+ [https://github.com/SIT-Yiban/kite-app](https://github.com/SIT-Yiban/kite-app)
++ [https://github.com/SIT-kite/kite-app](https://github.com/SIT-kite/kite-app)
 
 ### 镜像
 
-+ [https://hub.fastgit.org/SIT-Yaiban/kite-app](https://hub.fastgit.org/SIT-Yaiban/kite-app)
++ [https://hub.fastgit.org/SIT-kite/kite-app](https://hub.fastgit.org/SIT-kite/kite-app)
 
-+ [https://github.com.cnpmjs.org/SIT-Yiban/kite-app](https://github.com.cnpmjs.org/SIT-Yiban/kite-app)
++ [https://github.com.cnpmjs.org/SIT-kite/kite-app](https://github.com.cnpmjs.org/SIT-kite/kite-app)
