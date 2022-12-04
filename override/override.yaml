@@ -1,6 +1,6 @@
 routeOverride: 
   - inputRoute: /campusCard
-    output: /simple_html
+    outputRoute: /simple_html
     args:
       title: 校园卡工具停用
       htmlContent: 该工具已停用
