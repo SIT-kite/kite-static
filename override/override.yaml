@@ -1,9 +1,9 @@
-routeOverride: []
-  # - inputRoute: /expense
-  #   outputRoute: /simple_html
-  #   args:
-  #     htmlContent: 学校校园卡消费查询服务器维护中
-  #     title: 一个123浏览器
+routeOverride: 
+  - inputRoute: /campusCard
+    output: /simple_html
+    args:
+      title: 校园卡工具停用
+      htmlContent: 该工具已停用
 
   # - inputRoute: /baidu
   #   outputRoute: /browser
@@ -30,13 +30,11 @@ extraHomeItem: []
 
 homeItemHide: []
 
-routeNotice: {}
-  # /egg:
-  #   id: 1
-  #   title: Egg维护中
-  #   msg: Egg维护中，可能无法正常使用
-    
-  # /notice:
-  #   id: 3
-  #   title: 公告维护中
-  #   msg: 公告维护中，可能无法正常使用
+routeNotice: 
+  /timetable:
+    id: 1
+    title: 课表导入说明
+    msg: |
+      你好，若在升级新版本后遇到 "课表导入失败" 等异常情况，请确保已通过 WiFi 连接校园网，或者使用 EasyConnect 软件连接校园网。
+      同时检查你在 "设置" 中填写的密码是否与 OA 密码一致，小风筝只能通过你填写的 OA 账号和密码访问校园网。
+      如有其他建议或问题，欢迎在 “反馈” 中留言，我们会尽快回复，谢谢 !
