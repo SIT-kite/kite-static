@@ -11,6 +11,12 @@ routeOverride:
       title: 校园卡工具停用
       htmlContent: 该工具已停用
 
+  - inputRoute: /service_status
+    outputRoute: /simple_html
+    args:
+      title: 服务监控工具停用
+      htmlContent: 服务监控工具已停用
+
   # - inputRoute: /baidu
   #   outputRoute: /browser
   #   args:
