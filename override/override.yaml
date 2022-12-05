@@ -50,4 +50,4 @@ routeNotice:
         "    同时请检查你在 "设置" 中填写的密码是否与 OA 密码一致，小风筝只能通过你填写的 OA 账号和密码访问校园网。"
         "    如有其他建议或问题，欢迎在 “反馈” 中留言，我们会尽快回复，谢谢 !"
 
-homeColorSaturation: 0.0
+homeColorSaturation: 1.0
