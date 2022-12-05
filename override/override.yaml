@@ -23,7 +23,12 @@ routeOverride:
   #     initialUrl: http://bilibili.com
   #     fixedTitle: bilibili首页
 
-extraHomeItem: []
+extraHomeItem: 
+  - title: 入学信息
+    description: 查看新生的入学信息
+    route: /freshman
+    iconUrl: https://icons.bootcss.com/assets/icons/people.svg
+    
   # - title: 小风筝首页
   #   route: /baidu
   #   description: 打开一个小风筝首页
@@ -44,3 +49,4 @@ routeNotice:
         "    你好，若在升级新版本后遇到 "课表导入失败" 等异常情况，请确保已通过 WiFi 连接校园网，或者使用 EasyConnect 软件连接校园网。"
         "    同时请检查你在 "设置" 中填写的密码是否与 OA 密码一致，小风筝只能通过你填写的 OA 账号和密码访问校园网。"
         "    如有其他建议或问题，欢迎在 “反馈” 中留言，我们会尽快回复，谢谢 !"
+
