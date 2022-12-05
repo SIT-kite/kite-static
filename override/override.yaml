@@ -26,9 +26,9 @@ routeOverride:
 extraHomeItem: 
   - title: 入学信息
     description: 查看新生的入学信息
-    route: /freshman
+    route: /freshman/login
     iconUrl: https://icons.bootcss.com/assets/icons/people.svg
-    
+
   # - title: 小风筝首页
   #   route: /baidu
   #   description: 打开一个小风筝首页
