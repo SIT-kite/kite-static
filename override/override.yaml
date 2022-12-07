@@ -48,6 +48,11 @@ extraHomeItem:
 homeItemHide: []
 
 routeNotice: 
+  /electricity_bill:
+    id: 2
+    title: 电费异常说明
+    msg: "由于5号到7号的小时数据没统计，所以全部加到7号18点的统计上去了。余额信息正常"
+
   /timetable:
     id: 1
     title: 课表导入说明
