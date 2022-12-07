@@ -30,9 +30,14 @@ routeOverride:
   #     fixedTitle: bilibili首页
 
 extraHomeItem: 
-  - title: 入学信息
-    description: 查看新生的入学信息
+  - title: 新生登录
+    description: 登录新生账户
     route: /freshman/login
+    iconUrl: https://icons.bootcss.com/assets/icons/people.svg
+
+  - title: 入学信息
+    description: 查看入学信息
+    route: /freshman
     iconUrl: https://icons.bootcss.com/assets/icons/people.svg
 
   # - title: 小风筝首页
