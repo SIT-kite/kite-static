@@ -1,6 +1,7 @@
 import yaml
 import json
 from typing import Optional, List, Dict, Any
+import hashlib
 
 bulletin_index: Optional[List[Dict[str, Any]]] = None
 
@@ -30,11 +31,21 @@ for post in bulletin_index:
 
     del post['file']
 
+output_json_content = json.dumps(
+    obj=bulletin_index,
+    ensure_ascii=False,
+)
 with open('output.json', mode='w', encoding='utf-8') as f:
-    json.dump(
-        obj=bulletin_index, 
-        fp=f,
+    f.write(output_json_content)
+
+with open('output_meta.json', mode='w', encoding='utf-8') as f:
+    output_json_md5 = hashlib.md5(output_json_content.encode('utf-8')).digest().hex()
+    f.write(json.dumps(
+        obj={
+            'hash': output_json_md5,
+            'head_title': bulletin_index[0]['title']
+        },
         ensure_ascii=False,
-    )
+    ))
 
 print('Build Successfull!!!')

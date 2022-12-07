@@ -1,10 +1,12 @@
 include ../common.mk
 
 .DEFAULT_GOAL := all
-all: output.json
+all: output.json output_meta.json
 
 output.json: index.yaml src
 	${PYTHON} build.py
+
+output_meta.json: output.json
 
 .PHONY : clean
 clean:
@@ -13,3 +15,4 @@ clean:
 .PHONY : install
 install: all
 	cp output.json ${KITE_BULLETIN_JSON}
+	cp output_meta.json ${KITE_BULLETIN_JSON}
