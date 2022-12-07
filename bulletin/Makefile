@@ -1,9 +1,9 @@
 include ../common.mk
 
 .DEFAULT_GOAL := all
-all: output.json output_meta.json build.py
+all: output.json output_meta.json
 
-output.json: index.yaml src
+output.json: index.yaml src build.py
 	${PYTHON} build.py
 
 output_meta.json: output.json
