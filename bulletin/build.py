@@ -43,7 +43,7 @@ with open('output_meta.json', mode='w', encoding='utf-8') as f:
     f.write(json.dumps(
         obj={
             'hash': output_json_md5,
-            'head_title': bulletin_index[0]['title']
+            'headTitle': bulletin_index[0]['title']
         },
         ensure_ascii=False,
     ))
