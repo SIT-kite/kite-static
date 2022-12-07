@@ -3,7 +3,7 @@ include ../common.mk
 .DEFAULT_GOAL := all
 all: index.html
 
-index.html: index.md template.html
+index.html: index.md template.html config.yaml
 	${PYTHON} build.py
 
 .PHONY : clean
