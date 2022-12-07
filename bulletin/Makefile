@@ -15,4 +15,4 @@ clean:
 .PHONY : install
 install: all
 	cp output.json ${KITE_BULLETIN_JSON}
-	cp output_meta.json ${KITE_BULLETIN_JSON}
+	cp output_meta.json ${KITE_BULLETIN_META_JSON}
