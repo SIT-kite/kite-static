@@ -53,6 +53,16 @@ extraHomeItem:
 homeItemHide: []
 
 routeNotice: 
+  /freshman/login:
+    id: 4
+    title: 新生登录说明
+    msg: 若需使用原本的入学信息功能，请先在此登录后再使用
+
+  /freshman:
+    id: 3
+    title: 入学信息说明
+    msg: 若该功能出现错误信息，请先返回后点击“新生登录”后再使用本功能
+
   /electricity_bill:
     id: 2
     title: 电费异常说明
