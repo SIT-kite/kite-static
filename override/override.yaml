@@ -16,6 +16,13 @@ routeOverride:
     args:
       title: 服务监控工具停用
       htmlContent: 服务监控工具已停用
+  
+  - inputRoute: /chatgpt
+    outputRoute: /browser
+    args:
+      fixedTitle: ChatGPT对话机器人
+      initialUrl: https://chatgpt.menubarx.app/
+
 
 extraHomeItem: 
   - title: 新生登录
@@ -27,6 +34,11 @@ extraHomeItem:
     description: 查看入学信息
     route: /freshman
     iconUrl: https://icons.bootcss.com/assets/icons/people.svg
+
+  - title: ChatGPT
+    description: ChatGPT对话机器人
+    route: /chatgpt
+    iconUrl: https://icons.bootcss.com/assets/icons/chat.svg
 
 homeItemHide: []
 
