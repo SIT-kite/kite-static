@@ -21,7 +21,8 @@ routeOverride:
     outputRoute: /browser
     args:
       fixedTitle: ChatGPT对话机器人
-      initialUrl: https://chatgpt.menubarx.app/
+      initialUrl: https://gpt.chatapi.art/
+      showLoadInBrowser: false
 
 
 extraHomeItem: 
