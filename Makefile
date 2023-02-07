@@ -4,7 +4,6 @@ SECTIONS = \
 	about \
 	bulletin \
 	override \
-	upgrade \
 	version \
 
 .DEFAULT_GOAL := all
