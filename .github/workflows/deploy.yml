@@ -2,25 +2,28 @@ name: Kite static resource deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: ["master"]
   pull_request:
-    branches: [ master ]
+    branches: ["master"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v3
 
-      - name: Git clone
-        uses: appleboy/ssh-action@v0.1.2
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build
+        run: make all
+
+      - uses: hujiulong/action-qiniu-upload@master
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          port: ${{ secrets.SERVER_PORT }}
-          username: ${{ secrets.SERVER_USER }}
-          password: ${{ secrets.SERVER_SECRET }}
-          script: |
-            cd /var/kite/kite-static
-            git pull
-            pip install -r requirements.txt
-            make install
+          access_key: ${{ secrets.QINIU_ACCESS_KEY }}
+          secret_key: ${{ secrets.QINIU_SECRET_KEY }}
+          bucket: ${{ secrets.QINIU_BUCKET_APP }}
+          source_dir: "./output"
+          dest_dir: "/"
+          ignore_source_map: true
