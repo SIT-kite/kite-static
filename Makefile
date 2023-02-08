@@ -27,6 +27,10 @@ all:
 	cp src/version/version.json output/version/
 	cp src/version/message.html output/version/
 
+	mkdir -p output/api/v1/ output/api/v2/
+	cp output/bulletin/bulletin_mock_api.json output/api/v1/notice
+	cp output/bulletin/bulletin_mock_api.json output/api/v2/notice
+
 	for dir in $(SECTIONS); do $(MAKE) -C $$dir clean || exit "$$?"; done
 	@echo "Copy to output dir finished successfully! ......"
 
