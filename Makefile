@@ -1,8 +1,8 @@
 SECTIONS = \
-	about \
-	bulletin \
-	override \
-	version \
+	src/about \
+	src/bulletin \
+	src/override \
+	src/version \
 
 .DEFAULT_GOAL := all
 all: 
@@ -12,17 +12,17 @@ all:
 	mkdir -p output/
 
 	mkdir -p output/about/
-	cp about/index.html output/about/
+	cp src/about/index.html output/about/
 
-	cp bulletin/output.json output/
-	cp bulletin/output_meta.json output/
+	cp src/bulletin/output.json output/
+	cp src/bulletin/output_meta.json output/
 
-	cp override/override.json output/
-	cp override/override.*.json output/
+	cp src/override/override.json output/
+	cp src/override/override.*.json output/
 
 	mkdir -p output/version/
-	cp version/version.json output/version/
-	cp version/message.html output/version/
+	cp src/version/version.json output/version/
+	cp src/version/message.html output/version/
 
 	for dir in $(SECTIONS); do $(MAKE) -C $$dir clean || exit "$$?"; done
 	@echo "Copy to output dir finished successfully! ......"
