@@ -14,11 +14,14 @@ all:
 	mkdir -p output/about/
 	cp src/about/index.html output/about/
 
-	cp src/bulletin/output.json output/
-	cp src/bulletin/output_meta.json output/
+	mkdir -p output/bulletin/
+	cp src/bulletin/output.json output/bulletin/bulletin.json
+	cp src/bulletin/output_mock_api.json output/bulletin/bulletin_mock_api.json
+	cp src/bulletin/output_meta.json output/bulletin/bulletin_meta.json
 
-	cp src/override/override.json output/
-	cp src/override/override.*.json output/
+	mkdir -p output/override/
+	cp src/override/override.json output/override/
+	cp src/override/override.*.json output/override/
 
 	mkdir -p output/version/
 	cp src/version/version.json output/version/

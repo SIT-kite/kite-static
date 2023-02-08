@@ -19,7 +19,7 @@ for post in bulletin_index:
     # 若不填写文件路径的默认行为
     if 'file' not in post.keys():
         post['file'] = f'src/{title}.md'
-    
+
     if 'top' not in post.keys():
         post['top'] = False
 
@@ -35,11 +35,19 @@ output_json_content = json.dumps(
     obj=bulletin_index,
     ensure_ascii=False,
 )
+
 with open('output.json', mode='w', encoding='utf-8') as f:
     f.write(output_json_content)
 
+with open('output_mock_api.json', mode='w', encoding='utf-8') as f:
+    f.write(json.dumps(
+        obj={'code': 0, 'data': bulletin_index},
+        ensure_ascii=False,
+    ))
+
 with open('output_meta.json', mode='w', encoding='utf-8') as f:
-    output_json_md5 = hashlib.md5(output_json_content.encode('utf-8')).digest().hex()
+    output_json_md5 = hashlib.md5(
+        output_json_content.encode('utf-8')).digest().hex()
     f.write(json.dumps(
         obj={
             'hash': output_json_md5,
