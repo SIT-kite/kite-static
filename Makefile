@@ -15,9 +15,9 @@ all:
 	cp src/about/index.html output/about/
 
 	mkdir -p output/bulletin/
-	cp src/bulletin/output.json output/bulletin/bulletin.json
-	cp src/bulletin/output_mock_api.json output/bulletin/bulletin_mock_api.json
-	cp src/bulletin/output_meta.json output/bulletin/bulletin_meta.json
+	cp src/bulletin/output.json output/bulletin/content.json
+	cp src/bulletin/output_mock_api.json output/bulletin/mock_api.json
+	cp src/bulletin/output_meta.json output/bulletin/meta.json
 
 	mkdir -p output/override/
 	cp src/override/override.json output/override/
@@ -28,8 +28,8 @@ all:
 	cp src/version/message.html output/version/
 
 	mkdir -p output/api/v1/ output/api/v2/
-	cp output/bulletin/bulletin_mock_api.json output/api/v1/notice
-	cp output/bulletin/bulletin_mock_api.json output/api/v2/notice
+	cp output/bulletin/mock_api.json output/api/v1/notice
+	cp output/bulletin/mock_api.json output/api/v2/notice
 
 	for dir in $(SECTIONS); do $(MAKE) -C $$dir clean || exit "$$?"; done
 	@echo "Copy to output dir finished successfully! ......"
